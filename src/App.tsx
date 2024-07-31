@@ -6,7 +6,7 @@ function App() {
   }
 
   return (
-    <div className='w-[300px] h-[600px] bg-slate-500 flex flex-col justify-center items-center'>
+    <div className='w-[300px] h-[400px] bg-slate-500 flex flex-col justify-center items-center'>
       <h1>Imperialist</h1>
       <button onClick={handleClose}>Close</button>
     </div>
