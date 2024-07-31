@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='w-[300px] h-[400px] bg-slate-500 flex flex-col justify-center items-center'>
-      <h1>Imperialist</h1>
+      <h1 className='text-xl'>Imperialist</h1>
       <button onClick={handleClose}>Close</button>
     </div>
   )
