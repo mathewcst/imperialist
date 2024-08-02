@@ -1,14 +1,11 @@
-import { invoke } from '@tauri-apps/api/core'
+import { Temperature } from './components/Temperature'
 
 function App() {
-  const handleClose = async () => {
-    await invoke('toggle')
-  }
-
   return (
-    <div className='w-[300px] h-[400px] bg-slate-500 flex flex-col justify-center items-center'>
-      <h1 className='text-xl'>Imperialist</h1>
-      <button onClick={handleClose}>Close</button>
+    <div className='w-[300px] h-[400px] bg-neutral-800/50 flex flex-col justify-start items-start gap-4'>
+      <main className='flex flex-col items-start justify-start gap-4 p-4'>
+        <Temperature />
+      </main>
     </div>
   )
 }

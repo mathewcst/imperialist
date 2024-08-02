@@ -11,30 +11,39 @@ importers:
       '@tauri-apps/api':
         specifier: '>=2.0.0-beta.0'
         version: 2.0.0-beta.16
+      '@tauri-apps/plugin-autostart':
+        specifier: 2.0.0-beta.8
+        version: 2.0.0-beta.8
       '@tauri-apps/plugin-positioner':
         specifier: github:tauri-apps/tauri-plugin-positioner#v2
         version: https://codeload.github.com/tauri-apps/tauri-plugin-positioner/tar.gz/6bce93d025e4a3a97c3ff0a0a6e3800eb9c46d3a
       '@tauri-apps/plugin-shell':
-        specifier: '>=2.0.0-beta.0'
+        specifier: '>=2.0.0-beta.9'
+        version: 2.0.0-beta.9
+      '@tauri-apps/plugin-store':
+        specifier: 2.0.0-beta.8
         version: 2.0.0-beta.8
+      lucide-react:
+        specifier: ^0.423.0
+        version: 0.423.0(react@18.3.1)
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@tauri-apps/cli':
         specifier: '>=2.0.0-beta.0'
         version: 2.0.0-beta.23
       '@types/react':
-        specifier: ^18.2.15
+        specifier: ^18.3.3
         version: 18.3.3
       '@types/react-dom':
-        specifier: ^18.2.7
+        specifier: ^18.3.0
         version: 18.3.0
       '@vitejs/plugin-react':
-        specifier: ^4.2.1
+        specifier: ^4.3.1
         version: 4.3.1(vite@5.3.5)
       autoprefixer:
         specifier: ^10.4.19
@@ -46,10 +55,10 @@ importers:
         specifier: ^3.4.7
         version: 3.4.7
       typescript:
-        specifier: ^5.2.2
+        specifier: ^5.5.4
         version: 5.5.4
       vite:
-        specifier: ^5.3.1
+        specifier: ^5.3.5
         version: 5.3.5
 
 packages:
@@ -405,10 +414,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@tauri-apps/api@2.0.0-beta.15':
-    resolution: {integrity: sha512-H9w6iISmR+NvH4XuyCZB4zDN10tf9RFt6i/9JHEjaRhAowdAaJ+oiXq/3kedizNClHMtbTQ5j0oqDVPkZDAI8g==}
-    engines: {node: '>= 18.18', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
-
   '@tauri-apps/api@2.0.0-beta.16':
     resolution: {integrity: sha512-YGjkR9HxS/YyIoqoXDkk8o9Yy5NW6u9YxzeqEodwwOUoeS0nac6mzLTW3VYIuSelHmyUQCgbyENVY6e5CJXA4Q==}
     engines: {node: '>= 18.18', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
@@ -478,12 +483,18 @@ packages:
     engines: {node: '>= 10'}
     hasBin: true
 
+  '@tauri-apps/plugin-autostart@2.0.0-beta.8':
+    resolution: {integrity: sha512-bM+9L9PdSwy2PUhNlCRYAiLTY6t8bKRcO4ZX13ycLPS1yZrFIoSZCic1n7Sw4uZ185h3g3SlSUQyplwhQQ4bmg==}
+
   '@tauri-apps/plugin-positioner@https://codeload.github.com/tauri-apps/tauri-plugin-positioner/tar.gz/6bce93d025e4a3a97c3ff0a0a6e3800eb9c46d3a':
     resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-positioner/tar.gz/6bce93d025e4a3a97c3ff0a0a6e3800eb9c46d3a}
     version: 2.0.0-beta.7
 
-  '@tauri-apps/plugin-shell@2.0.0-beta.8':
-    resolution: {integrity: sha512-rFXI6MvsCdSGbuKbDu/NaOePREb9YTVTdeugHdvvljnKWW3dvmThBb2h/8Hxj+Z7Cd8MUoRxPeJWUZbPbJ2Imw==}
+  '@tauri-apps/plugin-shell@2.0.0-beta.9':
+    resolution: {integrity: sha512-BXBWRM9uaW3poT7O6py0Hm50dJUu6zuB/v4HOX727euF7uetKU79+W/0KBjtuLxIzXloCPNecg6Ti7x7XsGYjw==}
+
+  '@tauri-apps/plugin-store@2.0.0-beta.8':
+    resolution: {integrity: sha512-GXTEUT0O6Kg5lo6bpC1tuler4DZimeCF9C0ciN+aZft8PmApyKOaNU3aXmiplrzEytbQ96BdsFTSrsCnlpO6Cw==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -779,6 +790,11 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
+
+  lucide-react@0.423.0:
+    resolution: {integrity: sha512-QvFz6BvraP+gTBzPIwhyBRp76frmydoGqqBEDlVPtQGQJwwceCsgsTv7r5V/jGgK63sru3aKtGJGlkg/Bgu9CQ==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -1364,8 +1380,6 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.19.1':
     optional: true
 
-  '@tauri-apps/api@2.0.0-beta.15': {}
-
   '@tauri-apps/api@2.0.0-beta.16': {}
 
   '@tauri-apps/cli-darwin-arm64@2.0.0-beta.23':
@@ -1411,13 +1425,21 @@ snapshots:
       '@tauri-apps/cli-win32-ia32-msvc': 2.0.0-beta.23
       '@tauri-apps/cli-win32-x64-msvc': 2.0.0-beta.23
 
+  '@tauri-apps/plugin-autostart@2.0.0-beta.8':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-beta.16
+
   '@tauri-apps/plugin-positioner@https://codeload.github.com/tauri-apps/tauri-plugin-positioner/tar.gz/6bce93d025e4a3a97c3ff0a0a6e3800eb9c46d3a':
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.16
 
-  '@tauri-apps/plugin-shell@2.0.0-beta.8':
+  '@tauri-apps/plugin-shell@2.0.0-beta.9':
     dependencies:
-      '@tauri-apps/api': 2.0.0-beta.15
+      '@tauri-apps/api': 2.0.0-beta.16
+
+  '@tauri-apps/plugin-store@2.0.0-beta.8':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-beta.16
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -1714,6 +1736,10 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  lucide-react@0.423.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   merge2@1.4.1: {}
 

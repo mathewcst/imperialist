@@ -2,6 +2,11 @@
 
 This template should help get you started developing with Tauri, React and Typescript in Vite.
 
-## Recommended IDE Setup
+## TODO
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- [ ] Add settings
+  - [ ] Set default location
+  - [ ] Set default unit
+  - [ ] Set Timezone list
+    - [ ] Current Timezone
+    - [ ] Custom Timezone (e.g. Work, Home, etc)

@@ -9,12 +9,21 @@
     "path:default",
     "event:default",
     "window:default",
+    "window:allow-show",
+    "window:allow-hide",
     "app:default",
     "image:default",
     "resources:default",
     "menu:default",
     "tray:default",
     "shell:allow-open",
-    "positioner:default"
+    "positioner:default",
+    "autostart:allow-enable",
+    "autostart:allow-disable",
+    "autostart:allow-is-enabled",
+    "store:allow-get",
+    "store:allow-set",
+    "store:allow-save",
+    "store:allow-load"
   ]
 }
